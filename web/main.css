@@ -1,3 +1,11 @@
+body {
+	background-color: black;
+	color: #00ff00;
+}
+
+p, a{
+	display: inline;
+}
 table {
     border-collapse: collapse;
 	width: 90%;
@@ -5,8 +13,9 @@ table {
 }
 
 table, th, td {
-    border: 1px solid black;
-    max-width:800px;
+    border: 2px dashed #00ff00;
+    max-width:auto;
+    padding: 10px;
 }
 
 pre {
@@ -15,4 +24,31 @@ pre {
     white-space: -pre-wrap;      /* Opera 4-6 */
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+p, a {
+	text-decoration: none;
+	color: green;
+}
+p, a:link {
+    text-decoration: none;
+}
+
+p, a:visited {
+    text-decoration: none;
+}
+
+p, a:hover {
+    text-decoration: none;
+	color: #00ff00;
+}
+
+p, a:active {
+    text-decoration: none;
+}
+
+input{
+color: #00ff00;
+background-color:black;
+border: 1px solid #00ff00;
 }
