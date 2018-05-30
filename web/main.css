@@ -47,8 +47,12 @@ p, a:active {
     text-decoration: none;
 }
 
-input{
+input {
 color: #00ff00;
 background-color:black;
 border: 1px solid #00ff00;
+}
+
+a pre {
+display: inline;
 }

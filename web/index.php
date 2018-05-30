@@ -13,7 +13,6 @@ require_once('config.php');
 <input type="submit" value="Buscar">
 </form>
 <?php
-###################################################
 if(isset($_GET['contiene']))
 {
 	$buscar = $mysqli->real_escape_string($_GET['contiene']);
@@ -54,8 +53,9 @@ if(isset($_GET['contiene']))
 			$fila2 = mysqli_fetch_assoc($ip);
 			echo "<tr><td align=\"center\">".htmlentities($fila2['ip'])."</td><td align=\"center\">".htmlentities($fila['puerto'])."</td><td><pre>".htmlentities($fila['respuesta'])."</pre></td></tr>"; 
 		}
-	}
+
 	echo "</table>";
+	}
 if(isset($_GET['contiene']))
 {
 	if (isset($_GET['page']))
@@ -65,16 +65,13 @@ if(isset($_GET['contiene']))
 	{
 		$page = 1;
 	}
-	print " <br><a href=\"index.php?contiene=".htmlentities($_GET['contiene'])."&page=".($page-1)."\"><--</a> ";
+	print " <br><a href=\"index.php?contiene=".htmlentities($_GET['contiene'])."&page=".($page-1)."\"><pre><--</pre></a> ";
 	print "  $page  ";
-print " <a href=\"index.php?contiene=".htmlentities($_GET['contiene'])."&page=".($page+1)."\">--></a> ";
+print " <a href=\"index.php?contiene=".htmlentities($_GET['contiene'])."&page=".($page+1)."\"><pre>--></pre></a> ";
 echo "</p>";
 	}
 
 
-
-
-###################################################
 ?>
 			<br>
 			<br>
